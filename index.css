@@ -19,11 +19,12 @@ body{
     flex-direction: column;
     height: 100%;
     justify-content: center;
+    align-items: center;
     padding: 0 3rem;
 }
 
 h1, h2{
-    font-weight: 300;
+    font-weight: bold;
     margin: 0.4rem;
 }
 
@@ -33,6 +34,10 @@ h2 {
 
 .txt-type > .txt{
     border-right: 0.2rem solid #ccc;
+}
+
+span{
+    font-size: 3rem;
 }
 
 @media (min-width: 1200px){
@@ -65,7 +70,18 @@ h2 {
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 350px){
 
     h1{
         font-size: 1.5rem;
@@ -73,5 +89,6 @@ h2 {
 
     h2{
         font-size: 1.5rem;
+        color: #333;
     }
 }
